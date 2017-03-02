@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+// for props, key selector matches key from API ... i.e. 'Title' & 'Year' with uppercase first letter
 function FavMovie(props) {
   return (
     <p>
-      My Favorite Movie: {props.movie.Title},
-      Year Released: {props.movie.Year}
+      My Favorite Movie: {props.movie.Title}, 
+      Year Released: {props.movie.Year} 
     </p>
   );
 }
@@ -22,7 +23,7 @@ function PreLoader(props) {
 
 function App(props) {
   if (props.loading) {
-    return <PreLoader/>
+    return <PreLoader/>;
   } else {
     const titles = props.movies.map(movie => (
     <FavMovie
