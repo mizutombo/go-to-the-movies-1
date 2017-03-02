@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+
+fetch('http://www.omdbapi.com/?s=Star%20Wars&plot=short&r=json')
+  .then(res => res.json())
+  .then(movies => {
+
+  });
 
 ReactDOM.render(
   <App />,
