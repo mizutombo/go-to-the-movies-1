@@ -18,7 +18,7 @@ function PreLoader(props) {
       <h1>Movies Collection</h1>
       <h2>Loading ...</h2>
     </div>
-  )
+  );
 }
 
 function App(props) {
